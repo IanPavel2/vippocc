@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Plusopokazywator
-// @namespace    Plusopokazywator
-// @version      0.2137
+// @namespace    VVadovice
+// @version      0.2136
 // @description  mihau dlaczego ლ(ಠ_ಠ ლ)
+// @author       Jan Paweł II
 // @match        https://wykop.pl/*
 // ==/UserScript==
 
@@ -91,7 +92,6 @@
 
 
     (new MutationObserver(() => {
-        console.log('mutation');
         for (const node of document.querySelectorAll('section[id].entry:not(:has(.entry-votes))')) {
             showFiveVoters(node);
         }
