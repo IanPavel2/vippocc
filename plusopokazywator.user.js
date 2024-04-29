@@ -95,5 +95,5 @@
         for (const node of document.querySelectorAll('section[id].entry:not(:has(.entry-votes))')) {
             showFiveVoters(node);
         }
-    })).observe(document.querySelector('main'), {childList: true, subtree: true});
+    })).observe(document.body, {childList: true, subtree: true});
 })();
